@@ -1,19 +1,31 @@
-Se dispone de cuatro archivos CSV que contienen tweets publicados desde Portugal entre el 1 de agosto de 2018 y el 20 de octubre de 2018, obtenidos de
+# 1. Recogida de datos complejos
+
+## 1.1 Dataset Tweets
+
+Se dispone de cuatro archivos CSV que contienen tweets publicados en Portugal entre el 1 de agosto de 2018 y el 20 de octubre de 2018, obtenidos de
 [Kaggle](https://www.kaggle.com/datasets/augustop/portuguese-tweets-for-sentiment-analysis) debido a la
-imposibilidad de acceder a los datos mediante la API de X por limitaciones de pago. Estos archivos se clasifican de la siguiente manera: Tweets con Tema, que incluyen alrededor
-de 60,000 tweets recogidos utilizando aproximadamente 100 términos políticos junto con emoticonos positivos y negativos; Tweets sin Tema, que contienen cerca de 780,000 tweets
-obtenidos únicamente a partir de emoticonos positivos y negativos; Tweets Neutrales de Hashtags, que suman alrededor de 15,000 tweets recolectados mediante hashtags; y 
-Tweets Neutrales de Cuentas de Noticias, que incluyen aproximadamente 35,000 tweets recopilados directamente de cuentas de noticias populares. 
+imposibilidad de acceder a los datos mediante la API de X por limitaciones de pago. Estos archivos se clasifican de la siguiente manera:
+1. Tweets con Tema, que incluyen alrededor de 60,000 tweets recogidos utilizando aproximadamente 100 términos políticos junto con emoticonos positivos y negativos.
+2. Tweets sin Tema, que contienen cerca de 780,000 tweets obtenidos únicamente a partir de emoticonos positivos y negativos. Este CSV, a su vez, ha sido dividido en 5 partes para que sea posible añadirlo a GitHub, pues solo es posible subir archivos de máximo 25 MB.
+3. Tweets Neutrales de Hashtags, que suman alrededor de 15,000 tweets recolectados mediante hashtags.
+4. Tweets Neutrales de Cuentas de Noticias, que incluyen aproximadamente 35,000 tweets recopilados directamente de cuentas de noticias populares.
 
-Adicionalmente, se cuenta con datos meteorológicos de Portugal obtenidos de la API de [Visual Crossing](https://www.visualcrossing.com/weather-api), en formato CSV, que abarcan las mismas fechas y están divididos en tres 
-archivos distintos debido a limitaciones de la API que solo permitía descargar un archivo por mes. Estos datos se unirán en un único CSV para su análisis.
+Este dataset contiene las siguientes variables o atributos:
 
-Todos los datos fueron recogidos el 3 de octubre de 2024.
+- id: Identificador único de cada tweet.
+- tweet_text: Texto del tweet.
+- tweet_date: Fecha y hora en que se publicó el tweet.
+- sentiment: Sentimiento asociado al tweet.
+- query_used: Indica el término de búsqueda que se utilizó para recopilar el tweet.
 
-La licencia de uso de los datos de tweets es [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en). La licencia de uso de los datos de los datos 
-meteorológicos es [Términos de uso](https://www.visualcrossing.com/weather-services-terms).
+La licencia de uso bajo la que se encuentran estos datos es [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en).
+ 
 
-Los datos meteorológicos contienen:
+## 1.2 Dataset Datos Meteorológicos 
+
+Adicionalmente, se cuenta con datos meteorológicos de Portugal obtenidos de la API de [Visual Crossing](https://www.visualcrossing.com/weather-api), en formato CSV, que abarcan las mismas fechas. Estos datos están divididos en tres archivos distintos debido a limitaciones de la API que solo permitía descargar un archivo por mes. Estos datos se unirán en un único CSV para su análisis.
+
+Este dataset contiene las siguientes variables o atributos:
 
 - name: Nombre del lugar o región (en este caso, Portugal).
 - datetime: Fecha y hora del registro (en formato ISO 8601).
@@ -40,12 +52,7 @@ Los datos meteorológicos contienen:
 - icon: Ícono asociado con las condiciones meteorológicas (ej. "clear-night").
 - stations: Códigos de las estaciones meteorológicas que contribuyeron al registro.
 
+La licencia de uso bajo la que se encuentran estos datos es [Términos de uso](https://www.visualcrossing.com/weather-services-terms).
 
-Los datos de tweets contienen:
-
-- id: Identificador único de cada tweet.
-- tweet_text: Texto del tweet.
-- tweet_date: Fecha y hora en que se publicó el tweet.
-- sentiment: Sentimiento asociado al tweet.
-- query_used: Indica el término de búsqueda que se utilizó para recopilar el tweet.
+Todos los datos, tanto los tweets como los meteorológicos, fueron obtenidos el 3 de octubre de 2024.
 
