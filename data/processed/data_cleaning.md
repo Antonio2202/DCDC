@@ -1,8 +1,8 @@
-# Procedimientos de limpieza de datos
+# 1. Procedimiento de limpieza de datos
 
 Vamos a realizar la limpieza, normalización y agrupación de los datos recogidos.
 
-### Descripción de los métodos utilizados para la limpieza de datos
+## 1.1 Descripción de los métodos utilizados para la limpieza de datos
    
 1. **Eliminación de filas duplicadas**: Se eliminan posibles duplicados del dataset para evitar redundancia en el análisis.
    
@@ -17,7 +17,10 @@ Vamos a realizar la limpieza, normalización y agrupación de los datos recogido
 
 6. **División del dataset**: Se divide el dataset completo en tres partes para diferentes usos, manteniendo un enfoque balanceado mediante el uso de la función `sample(frac=1)` para barajar los datos antes de dividirlos.
 
-### Justificación de las decisiones tomadas durante el proceso de limpieza
+## 1.2 Justificación de las decisiones tomadas durante el proceso de limpieza
+
 - **Selección de columnas**: Se eliminaron aquellas columnas que consideramos redundantes o irrelevantes para el análisis, lo cual simplifica el dataset y facilita la interpretación de los resultados. Por ejemplo, nos quedamos con columnas como conditions o icon que muestran el tipo de clima que hace en cada momento.
+
 - **Eliminación de duplicados**: Mantener solo registros únicos ayuda a evitar sesgos en los resultados, asegurando que cada punto de datos tenga la misma importancia.
+
 - **División del dataset**: Dividir el conjunto de datos en partes para poder subirlo al repositorio de GitHub, ya que el tamaño del dataset completo supera el límite permitido.
