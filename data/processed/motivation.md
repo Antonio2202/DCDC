@@ -6,6 +6,8 @@ Este análisis busca explorar la relación entre las condiciones climátológica
 
 ## 1.2 Preguntas de Investigación o Hipótesis
 
+- Todas las hipótesis formuladas en este análisis se refieren exclusivamente a Portugal y al período comprendido entre el 1 de agosto de 2018 y el 20 de octubre de 2018. Los resultados estarán limitados a esta región y rango temporal específico, y las conclusiones se interpretarán dentro de este contexto geográfico y temporal.
+
 1. Los días de temperaturas más extremas se publican más tweets que en días de clima moderado
 
 2. En dias lluviosos o nublados, la cantidad de tweets con sentimiento negativo es mayor que en días soleados
