@@ -6,7 +6,7 @@ Vamos a realizar la limpieza, normalización y agrupación de los datos recogido
    
 1. **Eliminación de filas duplicadas**: Se eliminan posibles duplicados del dataset para evitar redundancia en el análisis.
    
-2. **Manejo de valores nulos**: Se identificaron valores nulos y se sustituyeron por valores adecuados al tipo de dato. 
+2. **Manejo de valores nulos**: Se identificaron valores nulos y se sustituyeron por valores en el mismo formato. Por ejemplo, las columnas 'tweet_texts' y 'sentiments' contienen listas de textos y listas de sentimientos respectivamente. Se sustituyen los valores NaN por listas vacías.
 
 3. **Conversión de tipos de datos**: Se convirtieron los tipos de datos de las columnas según su contenido y uso en el análisis.
 
@@ -14,6 +14,8 @@ Vamos a realizar la limpieza, normalización y agrupación de los datos recogido
 
 5. **Selección de columnas relevantes**: Se seleccionaron únicamente las columnas necesarias para el análisis, eliminando aquellas que no aportaban valor.
    - Columnas seleccionadas: `['datetime', 'temp', 'precip', 'preciptype', 'conditions', 'tweet_texts', 'sentiments', 'icon', 'number_tweets', 'hour']`.
+
+   - La columna preciptype tiene valores nulos cuando no llueve y el string 'rain' cuando hay precipitaciones. Lo usaremos para saber los momentos en los que ha         llovido
 
 6. **División del dataset**: Se divide el dataset completo en tres partes para diferentes usos, manteniendo un enfoque balanceado mediante el uso de la función `sample(frac=1)` para barajar los datos antes de dividirlos.
 
