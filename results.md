@@ -4,11 +4,11 @@
 
 Para empezar, se ha realizado un análisis del número de tweets por hora. Como se puede ver en el gráfico posterior, se publican más tweets durante la noche (periodo 7:00 am hasta 7:00 pm). Además, Las horas de mayor actividad parecen coincidir con la medianoche y la noche mientras que la horas de menos con la madrugada.
 
-<img src="Imagenes/image.png" width="70%" />
+<img src="images/image.png" width="70%" />
 
 Por otro lado, se ha obtenido un gráfico en el que se puede apreciar claramente la poca cantidad de días lluviosos que existen en el dataset, coinciendo estos, además, con una nula cantidad de datos de tweets, dificultando enormemente el análisis.
 
-<img src="Imagenes/image-1.png" width="70%" />
+<img src="images/image-1.png" width="70%" />
 
 
 ## 1.2. Análisis de la condición meteorológica y el número de tweets en función del día y la noche
@@ -17,17 +17,17 @@ Para este análisis se han obtenido varios gráficos de lineas, realizando una m
 
 ### 1.2.1. Noche
 
-<img src="Imagenes/image-6.png" width="70%" />
+<img src="images/image-6.png" width="70%" />
 
-<img src="Imagenes/image-7.png" width="70%" />
+<img src="images/image-7.png" width="70%" />
 
 Si hacemos un filtro eligiendo solo aquellos valores por encima de 3000 tweets obtenemos que hay 4 ocurriencias para dias *partly_cloudy_night* y solo 16 ocurrencias para dias *clear-night*.
 
 ### 1.2.2. Día
 
-<img src="Imagenes/image-8.png" width="70%" />
+<img src="images/image-8.png" width="70%" />
 
-<img src="Imagenes/image-9.png" width="70%" />
+<img src="images/image-9.png" width="70%" />
 
 Si hacemos un filtro eligiendo solo aquellos valores por encima de 1900 tweets obtenemos que hay 14 ocurriencias para dias *partly_cloudy_day* y solo 5 ocurrencias para dias *clear-day*.
 
@@ -35,27 +35,27 @@ Si hacemos un filtro eligiendo solo aquellos valores por encima de 1900 tweets o
 
 Para este análisis se obtienen varios gráficos de la relación entre el estado del cielo y la cantidad de tweets publicados, incluyendo un análisis por separado del día y de la noche y otro análisis centrado en los sentimientos de dichos tweets.
 
-<img src="Imagenes/image-11.png" width="70%" />
+<img src="images/image-11.png" width="70%" />
 
 Valor p del ANOVA: 0.19771467399421125
 
-<img src="Imagenes/image-12.png" width="70%" />
+<img src="images/image-12.png" width="70%" />
 
 Valor p del ANOVA: 0.009878204388579717
 
-<img src="Imagenes/image-13.png" width="70%" />
+<img src="images/image-13.png" width="70%" />
 
 Valor p del ANOVA: 0.09222475952389282
 
-<img src="Imagenes/image-14.png" width="70%" />
+<img src="images/image-14.png" width="70%" />
 
 Valor p del ANOVA: 0.21878354371141961
 
-<img src="Imagenes/image-15.png" width="70%" />
+<img src="images/image-15.png" width="70%" />
 
 Valor p del ANOVA: 0.04359749121404158
 
-<img src="Imagenes/image-16.png" width="70%" />
+<img src="images/image-16.png" width="70%" />
 
 Valor p del ANOVA: 0.017766991798431123
 
@@ -66,46 +66,46 @@ Para empezar este análisis de correlación entre la temperatura y el número de
 ### 1.4.1. Día
 
 <p float="left">
-    <img src="Imagenes/image-2.png" width="45%" />
-    <img src="Imagenes/image-3.png" width="45%" />
+    <img src="images/image-2.png" width="45%" />
+    <img src="images/image-3.png" width="45%" />
 </p>
 
 ### 1.4.2. Noche
 
 <p float="left">
-    <img src="Imagenes/image-4.png" width="45%" />
-    <img src="Imagenes/image-5.png" width="45%" />
+    <img src="images/image-4.png" width="45%" />
+    <img src="images/image-5.png" width="45%" />
 </p>
 
 Posteriormente, se va a comprobar, más profundamente, si existe una relación entre la temperatura y los tweets.
 
 Para este nuevo análisis se obtienen varios gráficos de la correlación entre la temperatura con los tweets, incluyendo un análisis por separado del día y de la noche y otro análisis centrado en los sentimientos de dichos tweets.
 
-<img src="Imagenes/temperatura_tweets_general.png" width="70%" />
+<img src="images/temperatura_tweets_general.png" width="70%" />
 
 Correlación de Pearson: 0.21, p-valor: 3.927e-17
 
 Correlación de Spearman: 0.26, p-valor: 1.759e-25
 
-<img src="Imagenes/temperatura_tweets_dia.png" width="70%" />
+<img src="images/temperatura_tweets_dia.png" width="70%" />
 
 Correlación de Pearson: 0.37, p-valor: 1.989e-29
 
 Correlación de Spearman: 0.32, p-valor: 1.578e-22
 
-<img src="Imagenes/temperatura_tweets_noche.png" width="70%" />
+<img src="images/temperatura_tweets_noche.png" width="70%" />
 
 Correlación de Pearson: 0.33, p-valor: 1.113e-20
 
 Correlación de Spearman: 0.34, p-valor: 6.243e-21
 
-<img src="Imagenes/temperatura_tweets_positivos.png" width="70%" />
+<img src="images/temperatura_tweets_positivos.png" width="70%" />
 
 Correlación de Pearson: 0.32, p-valor: 8.833e-19
 
 Correlación de Spearman: 0.32, p-valor: 6.301e-19
 
-<img src="Imagenes/temperatura_tweets_negativos.png" width="70%" />
+<img src="images/temperatura_tweets_negativos.png" width="70%" />
 
 Correlación de Pearson: 0.02, p-valor: 6.1002e-01
 
