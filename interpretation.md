@@ -1,4 +1,6 @@
-## Análisis de Patrones Descubiertos
+# 1. Interpretación
+
+## 1.1. Análisis de Patrones Descubiertos
 
 En el análisis general se observa que hay un mayor número de tweets durante la noche que por el día, coincidiendo con la medianoche cuando más y las horas de menos con la madrugada, lo que puede indicar que se publican más tweets debido al aumento del uso del móvil por las noches cuando la gente se va a dormir, aunque no es concluyente.
 
@@ -14,7 +16,7 @@ Por último, se hace un estudio de los temas de los tweets.
 Primero, se analizan si los temas varían mucho dependiendo de si se publican por la noche o por el día. Se encuentran algunos resultados interesantes. Por ejemplo, en la noche destacan topics como el amor, la vida, hacer ahora o dormir, lo cual tiene sentido y nos puede indicar que durante la noche las personas son más reflexivas, hablando de temas más específicos como indica su perplexity bajo. En cambio, durante el día se observan topics como tener buen día, quedar en casa, la gente y la vida presente, temas más generales y comunes, que se refleja en un valor alto de log likelihood y perplexity.
 Después, se realiza un modelo dinámico de tópicos por mes, para ver cómo evolucionan los temas a lo largo de los 3 meses en los que se encuentran nuestros datos. Por desgracia, no se observa ninguna evolución respecto a los temas de los tweets. Vemos que tanto en los dos modelos que desarrollamos los temas que predominan en cada mes son prácticamente iguales, indicando que no depende del mes, sino que son temas recurrentes en los tweets sin importar el tiempo.
 
-## Relación con las Preguntas de Investigación
+## 1.2. Relación con las Preguntas de Investigación
 
 Las preguntas fueron:
 
@@ -28,15 +30,15 @@ Las preguntas fueron:
 
 "Los cambios climáticos bruscos (por ejemplo, de un día soleado a lluvioso) aumentan la variabilidad en los sentimientos expresados en los tweets."**No hubieron datos de lluvia.**
 
-## Ejemplos ilustrativos
+## 1.3. Ejemplos ilustrativos
 
-### Análisis General
+### 1.3.1. Análisis General
 
 <img src="images/image.png" width="70%" />
 
 En este gráfico, se puede observar el patrón que hemos mencionado anteriormente, mostrando que las personas publican más tweets durante la noche.
 
-### Análisis de la condición meteorológica y el número de tweets en función del día y la noche
+### 1.3.2. Análisis de la condición meteorológica y el número de tweets en función del día y la noche
 
 <img src="images/image-6.png" width="70%" />
 
@@ -50,7 +52,7 @@ En estos dos gráficos se observa la mayor cantidad de picos en noches nubladas 
 
 En estos dos gráficos se observa la mayor cantidad de picos en dias soleados que en dias nublados.
 
-### Análisis de Varianza (ANOVA)
+### 1.3.3. Análisis de Varianza (ANOVA)
 
 <img src="images/image-13.png" width="70%" />
 
@@ -62,7 +64,7 @@ En estos dos gráficos se observa la mayor cantidad de picos en dias soleados qu
 
 Con estos gráficos de análisis de varianza (ANOVA) se ve como el tiempo no influye en el sentimiento, pero si se puede observar que influye en la cantidad de tweets.
 
-### Análisis de correlacion de variables (Temperatura y Número de Tweets)
+### 1.3.4. Análisis de correlacion de variables (Temperatura y Número de Tweets)
 
 <img src="images/temperatura_tweets_general.png" width="70%" />
 
@@ -76,7 +78,7 @@ Con estos gráficos de análisis de varianza (ANOVA) se ve como el tiempo no inf
 
 Con este grupo de gráficos se observa una correlación débil entre la temperatura y el número de tweets. Sin embargo, con los tweets positivos se obtiene una correlación moderada, mientras que no hay correlación con los tweets negativos.
 
-### Análisis de topics en día y noche con LDA
+### 1.3.5. Análisis de topics en día y noche con LDA
 
 Por último, se hace un estudio de los temas de los tweets. 
 Primero, se analizan si los temas varían mucho dependiendo de si se publican por la noche o por el día. Se encuentran algunos resultados interesantes. Por ejemplo, en la noche destacan topics como el amor, la vida, hacer ahora o dormir, lo cual tiene sentido y nos puede indicar que durante la noche las personas son más reflexivas, hablando de temas más específicos como indica su perplexity bajo. En cambio, durante el día se observan topics como tener buen día, quedar en casa, la gente y la vida presente, temas más generales y comunes, que se refleja en un valor alto de log likelihood y perplexity.
@@ -106,7 +108,7 @@ Después, se realiza un modelo dinámico de tópicos por mes, para ver cómo evo
 
 Aquí vemos el análisis de los temas por dia y noche, pudiendo observar las tendencias anteriormente descritas.
 
-### Modelo dinámico de tópicos por mes
+### 1.3.6. Modelo dinámico de tópicos por mes
 
 #### Modelo 1
 
@@ -175,7 +177,7 @@ Aquí vemos el análisis de los temas por dia y noche, pudiendo observar las ten
 
 En cambio, en este análisis de tópicos se puede ver que no hay ninguna evolución respecto a los temas de los tweets a lo largo de los meses.
 
-### P valor de variables exógenas
+### 1.3.7 P valor de variables exógenas
 
 <img src="images/diasemana.PNG" width="70%" />
 
