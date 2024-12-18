@@ -227,4 +227,8 @@ Se han identificado los siguientes temas con el **Modelo 2** para cada mes:
 
 Para la variable del día y la noche p valor de 0.530. Para día de la semana p valor de 0.000. 
 
+Graficamos la serie coloreando por días para visualizar.
+
+<img src="images/diasemana.png" width="70%" />
+
 
