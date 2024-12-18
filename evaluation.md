@@ -17,7 +17,7 @@ E análisis de varianza (ANOVA) fue útil en este caso porque permitió evaluar 
 El análisis de correlación de Pearson mide la relación lineal entre dos variables, mientras que la correlación de Spearman evalúa relaciones monótonas, es decir, cómo varían las variables de forma consistente, sin necesidad de ser lineales. Ambas métricas son útiles en este caso para identificar y cuantificar la relación entre la temperatura y el número de tweets, ya que nos permiten entender si existe alguna tendencia o patrón consistente entre estas dos variables. La combinación de ambos enfoques proporciona una visión más completa, considerando tanto relaciones lineales como no lineales.
 
 
-### 1.1.3. Log Likelihood y Perplexity:
+### 1.1.3. Log Likelihood y Perplexity
      
 Log likelihood: representa cuán probable es que el modelo haya generado los datos observados. Un valor más alto (menos negativo) significa que el modelo se ajusta mejor a los datos, explica mejor los datos, o que captura bien las distribuciones subyacentes. Es relevante para evaluar los resultados ya que nos permite ver qué periodo entre los datos diurnos y nocturnos tiene patrones más consistentes o predecibles.
 
