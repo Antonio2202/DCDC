@@ -49,6 +49,6 @@ En el primero se define el número de topics en 5, sobre un *time_slice* de 3 re
 
 En el segundo modelo se define el número de topics en 3, sobre un *time_slice* de 3 representando los 3 meses que tiene el dataset. Además, se cambia el valor de *chain_variance* a 0.3 para intentar topics más diferentes entre ellos.
 
-## Series temporales con variables exógenas
+## 1.6. Series temporales con variables exógenas
 
-Para contrastar las hipótesis de si el día y la noche pueden afectar al número de tweets e incluso teniendo en cuenta el día de la semana para ver si esto afecta. El análisis del número de tweets mostró que la serie era estacionaria pero no presentaba estacionalidad, descartando patrones cíclicos significativos. Por ello, se utilizó un modelo SARIMAX sin componente estacional, incorporando variables exógenas como el momento del día (día/noche) y el día de la semana. 
+Se realiza este estudio para contrastar las hipótesis de si el día y la noche pueden afectar al número de tweets, y además, se utiliza también para comprobar si el día de la semana afecta. El análisis del número de tweets mostró que la serie era estacionaria pero no presentaba estacionalidad, descartando patrones cíclicos significativos. Por ello, se utilizó un modelo SARIMAX sin componente estacional, incorporando variables exógenas como el momento del día (día/noche) y el día de la semana. 
