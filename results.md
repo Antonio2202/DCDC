@@ -223,3 +223,8 @@ Se han identificado los siguientes temas con el **Modelo 2** para cada mes:
 - Tópico 2: [('pra', 0.018392201194899118), ('queria', 0.01666051666776638), ('triste', 0.009490434551248284), ('amo', 0.009469548197934007), ('vou', 0.009006023495778248)]
 
 
+## 1.7 Series temporales con variables exógenas
+
+Para la variable del día y la noche p valor de 0.530. Para día de la semana p valor de 0.000. 
+
+
