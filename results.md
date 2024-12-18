@@ -229,6 +229,6 @@ Para la variable del día y la noche p valor de 0.530. Para día de la semana p 
 
 Graficamos la serie coloreando por días para visualizar.
 
-<img src="images/diasemana.png" width="70%" />
+<img src="images/diasemana.PNG" width="70%" />
 
 
