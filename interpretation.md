@@ -12,9 +12,11 @@ Por otro lado, se diferencian tweets etiquetados como negativos de los positivos
 También, se intenta estudiar la relación entre la temperatura y número de tweets, así como su sentimiento asociado. No se observa una correlación concluyente entre la temperatura y el número de tweets. Sin embargo, con los tweets positivos y la temperatura se obtiene una correlación moderada, mientras que no hay correlación con los tweets negativos. 
 La correlación no es demasiado alta, e incluso si los resultados hubieran sido altos, es importante destacar que este análisis no es concluyente, estas correlaciones no implican causalidad.
 
-Por último, se hace un estudio de los temas de los tweets. 
+También, se hace un estudio de los temas de los tweets. 
 Primero, se analizan si los temas varían mucho dependiendo de si se publican por la noche o por el día. Se encuentran algunos resultados interesantes. Por ejemplo, en la noche destacan topics como el amor, la vida, hacer ahora o dormir, lo cual tiene sentido y nos puede indicar que durante la noche las personas son más reflexivas, hablando de temas más específicos como indica su perplexity bajo. En cambio, durante el día se observan topics como tener buen día, quedar en casa, la gente y la vida presente, temas más generales y comunes, que se refleja en un valor alto de log likelihood y perplexity.
 Después, se realiza un modelo dinámico de tópicos por mes, para ver cómo evolucionan los temas a lo largo de los 3 meses en los que se encuentran nuestros datos. Por desgracia, no se observa ninguna evolución respecto a los temas de los tweets. Vemos que tanto en los dos modelos que desarrollamos los temas que predominan en cada mes son prácticamente iguales, indicando que no depende del mes, sino que son temas recurrentes en los tweets sin importar el tiempo.
+
+En un último análisis se muestra el impacto de las variables exógenas sobre la serie temporal del número de tweets. La distinción entre día y noche no parece influir en el comportamiento del número de tweets, como lo refleja un p-valor alto de 0.530. Sin embargo, la variable correspondiente al día de la semana tiene un p-valor de 0.000, lo que indicaría una fuerte influencia en la serie. Este resultado sugiere que existen patrones consistentes de actividad según el día, posiblemente relacionados con diferencias en el comportamiento de los usuarios a lo largo de la semana, como fines de semana más tranquilos o picos de actividad en días laborales.
 
 ## 1.2. Relación con las Preguntas de Investigación
 
